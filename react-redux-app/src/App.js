@@ -13,7 +13,7 @@ import { getBeers } from './actions';
 function App(props) {
   return (
     <div className="App">
-      <button onClick={props.getBeers}>Basic Button</button>
+      <button onClick={props.getBeers}>Summon The Beers!!!</button>
       {/*{!props.beers && !props.isLoading && (<p>^ Click The Button ^</p>)}*/}
       {/*{props.isLoading && (<Loader color="green" height={50} width={50}/>)}*/}
       {/*{props.beers && !props.isLoading && <h1>{props.beers[6].name} - {props.beers[6].tagline}</h1>}*/}
