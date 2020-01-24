@@ -1,4 +1,4 @@
-import {FETCH_START, FETCH_SUCCESS, FETCH_FAILURE} from "../actions";
+import {FETCH_START, FETCH_SUCCESS, FETCH_FAILURE, REMOVE_BEER} from "../actions";
 
 const initialState = {
     isLoading: false,
@@ -25,6 +25,11 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 error: action.payload,
                 isLoading: false
+            };
+        case REMOVE_BEER:
+            return {
+                ...state,
+                beers: state.beers.filter(beer => beer.id !== action.payload) //removes feature
             };
         default:
             return state;

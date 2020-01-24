@@ -5,7 +5,7 @@ const BeerCard = props => {
     return (
         <div className="card">
             <div className="row-1">
-                <div className="btn"><button>+</button></div>
+                <div className="btn"><button onClick={() => props.dispatch(props.beer.id)}>TAKE</button></div>
                 <div className="pic"><img src={props.beer.image_url} alt={props.beer.name}/></div>
                 <div className="stats">
                     <h5>Stats</h5>
