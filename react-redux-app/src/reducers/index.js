@@ -29,7 +29,7 @@ export const reducer = (state = initialState, action) => {
         case REMOVE_BEER:
             return {
                 ...state,
-                beers: state.beers.filter(beer => beer.id !== action.payload) //removes feature
+                beers: state.beers.filter(beer => beer.id !== action.payload)
             };
         default:
             return state;
