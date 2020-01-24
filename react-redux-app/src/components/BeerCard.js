@@ -9,13 +9,17 @@ const BeerCard = props => {
                 <div className="pic"><img src={props.beer.image_url} alt={props.beer.name}/></div>
                 <div className="stats">
                     <h5>Stats</h5>
-                    <p>ABV: {props.beer.abv}</p>
-                    <p>IBU: {props.beer.ibu}</p>
-                    <p>PH: {props.beer.ph}</p>
+                    <ul>
+                        <li>ABV: {props.beer.abv}</li>
+                        <li>IBU: {props.beer.ibu}</li>
+                        <li>PH: {props.beer.ph}</li>
+                    </ul>
                     <h5>Pairings</h5>
-                    <p>1. {props.beer.food_pairing[0]}</p>
-                    <p>2. {props.beer.food_pairing[1]}</p>
-                    <p>3. {props.beer.food_pairing[2]}</p>
+                    <ol type="1">
+                        {props.beer.food_pairing.map(item => (
+                            <li>{item}</li>
+                        ))}
+                    </ol>
                 </div>
             </div>
             <div className="row-2">
