@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6, p, ol, li {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+p, li {
+    font-size: 10px;
+}
+
+li {
+    margin-left: -25px;
+}
+
+.container {
+    /*border: 2px solid red;*/
+}
+
+.limited-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    padding: 2px;
+    margin-top: 10px;
+    width: auto;
+    /*width: 33%;*/
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn button:hover {
+    background-color: gold;
+}
+
+.pic img {
+    height: 200px;
+    width: auto;
+}
+
+.stats {
+    border:1px solid #9c4543;
+    text-align: left;
+    padding: 2px;
+}
+
+.row-2 {
+    /*text-align: center;*/
+    width: 25vw;
+}
